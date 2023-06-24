@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -30,7 +31,7 @@ function Navbar(){
                         <nav className="nav-content">
                             {/* <!-- nav --> */}
                             <ul className="nav-content-list">
-                                <li className="nav-content-item"><a className="nav-content-link" href="#" data-bs-target="#locationModal" data-bs-toggle="modal"><i className="icofont-map"></i>Location</a></li>
+                                <li className="nav-content-item"><Link to="/" className="nav-content-link" data-bs-target="#locationModal" data-bs-toggle="modal"><i className="icofont-map"></i>Location</Link></li>
 
                                 <li className="nav-content-item account-login">
                                     <label className="open-menu-login-account" for="open-menu-login-account">
@@ -41,21 +42,21 @@ function Navbar(){
 
                                         {/* <!-- submenu --> */}
                                         <ul className="login-list">
-                                            <a href="javascript:void(0);" data-bs-target="#signupModal" data-bs-toggle="modal">
+                                            <Link to="/" data-bs-target="#signupModal" data-bs-toggle="modal">
                                                 <li className="login-list-item">Sign up</li>
-                                            </a>
-                                            <a href="javascript:void(0);" data-bs-target="#loginModal" data-bs-toggle="modal">
+                                            </Link>
+                                            <Link to="/" data-bs-target="#loginModal" data-bs-toggle="modal">
                                                 <li className="login-list-item">Login</li>
-                                            </a>
-                                            <a href="profile.php">
+                                            </Link>
+                                            <Link to="profile.php">
                                                 <li className="login-list-item">Profile Info</li>
-                                            </a>
-                                            <a href="wishlist.php">
+                                            </Link>
+                                            <Link to="wishlist.php">
                                                 <li className="login-list-item">Wishlist</li>
-                                            </a>
-                                            <a href="#">
+                                            </Link>
+                                            <Link to="#">
                                                 <li className="login-list-item">Logout</li>
-                                            </a>
+                                            </Link>
                                             </ul>
                                     </label>
                                 </li>
@@ -101,49 +102,49 @@ function Navbar(){
                     </div>
                     <div className="offcanvas-body mob-menu-body">
                         <ul className="mob-nav-list">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <Link to="#" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 <li><i className="icofont-login"></i>Login / Sign Up</li>
-                            </a>
-                            <a href="profile.php">
+                            </Link>
+                            <Link to="profile.php">
                                 <li><i className="icofont-user"></i>Profile Info</li>
-                            </a>
-                            <a href="wishlist.php">
+                            </Link>
+                            <Link to="wishlist.php">
                                 <li><i className="icofont-heart"></i> Wishlist</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <li><i className="icofont-logout"></i>Logout</li>
-                            </a>
+                            </Link>
                         </ul>
 
                         <ul className="mob-nav-imp-list">
-                            <a href="#">
+                            <Link to="#">
                                 <li>About Us</li>
                                 <i className="icofont-right"></i>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <li>Pricing</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <li>Become Our Partner</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <li>Terms & Condition</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <li>Privacy Policy</li>
-                            </a>
+                            </Link>
                         </ul>
 
                         <div className="sidebar-title">
                             <h6>Download Our App</h6>
                         </div>
                         <div className="sidebar-app">
-                            <a href="#">
+                            <Link to="#">
                                 <img src="assets/images/google-play-store-transparent.png"/>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <img src="assets/images/apple-store.png"/>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

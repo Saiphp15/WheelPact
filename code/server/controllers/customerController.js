@@ -9,6 +9,7 @@ const customerList = async (req,res) =>{
 const addCustomer = async (req,res) =>{
     let {name,email,phone} = req.body;
     let data = new Customers({name,email,phone});
+    
     let response = await data.save(); 
     let myToken = await data.getAuthToken();
     res.status(200).json({message:'Customer Added Successfully.',data:myToken});

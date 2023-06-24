@@ -18,6 +18,7 @@ let jwtAuth = (req,res,next)=>{
 const bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({extended:false}));
 
+
 router.get('/',(req,res)=>{
     res.send("hello our server running on port 8080");
 });
@@ -25,6 +26,7 @@ router.get('/',(req,res)=>{
 router.get("/list", jwtAuth, ctrl.customerList);
 
 router.post("/add", ctrl.addCustomer);
+
 
 router.post("/login", ctrl.customerLogin);
 
